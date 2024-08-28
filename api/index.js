@@ -32,8 +32,6 @@ app.on('error', (err) => {
 app.use('/api/users', require('./routes/users'));
 app.use('/api/lists', require('./routes/lists'));
 
-app.use('/api-docs', swagger.serve, swagger.setup(require('./swagger.json')));
-
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Server started on port ${process.env.PORT || 3000}`);
 });
