@@ -1,0 +1,89 @@
+.button{
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    font-weight: 400;
+    white-space: nowrap;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+.button span{
+    margin: 5px;
+}
+.button:hover{
+    opacity: .8;
+}
+.button.white{
+    background: linear-gradient(273.58deg, #bfbbbf 0%, #fcfcfc 100%);
+    color: black;
+}
+.button.pink{
+    background: linear-gradient(273.58deg, #9E55A0 0%, #EF3E3A 100%);
+}
+.button.gray{
+    background: linear-gradient(273.58deg, #666467 0%, #3f3e3e 100%);
+}
+.button.blue{
+    background: linear-gradient(273.58deg, #4b2f92 0%, #163d95 100%);
+}
+
+
+.search-area {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(273.58deg, #070211 0%, #040912 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search-area .close{
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    font-size: 40px;
+}
+
+.search-area-form{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+}
+.search-area-input {
+    width: 100%;
+    padding: 1rem 0;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 300;
+    background: none;
+    border: none;
+    border-bottom: 2.5px solid white;
+    color: white;
+    font-family: 'poppins';
+}
+
+.search-area-input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'poppins';
+}
+
+.search-area-form .form-group{
+    display: flex;
+}
+
+.search-area-button{
+    color: white;
+    background: none;
+    border: none;
+}

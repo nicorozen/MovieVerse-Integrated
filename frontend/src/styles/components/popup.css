@@ -1,0 +1,41 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    animation: animarsuperior 0.5s ease-in-out;
+  }
+
+  #curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad 50% */
+    z-index: 999; /* Asegura que el curtain esté por encima de otros elementos */
+  }
+/*   
+
+  .quickview .actions{
+    width: 75%;
+    gap: 1.5rem;
+  }
+  .quickview .actions .action{
+    color: #b1b2b3;
+    font-size: 1.4rem;
+  } */

@@ -1,0 +1,386 @@
+.movie-top-slider {
+    position: relative;
+    height: 100vh;
+    overflow-x: clip;
+  }
+
+ 
+
+  .slider-item {
+    position: relative;
+  }
+  
+  .slider-content {    
+    position: absolute;
+    bottom: 10rem;
+    left: 2rem;
+    color: #ffffff;
+    width: 90rem;
+    z-index: 12;
+  }
+
+  .slider-content h2{
+    font-size: 7.5rem;
+  }
+
+  .slider-content p{
+    font-size:1.4rem;
+    color: #b1b2b3; 
+  }
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1.7),
+      rgba(0, 0, 0, 0.7),
+      transparent
+    );
+    z-index: 10;
+  }
+
+  .slick-dots{
+    z-index: 9999;
+    bottom: 0;
+  }
+  .slick-dots li button:before{
+    color: white !important;
+  }
+
+
+  .top-ten-movies-section{
+    padding-top: 4rem;
+    padding-right:0 ;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .top-ten-movies-swiper{
+    padding-left: 4rem;
+  }
+
+  .top-ten-movies-swiper .top-ten-movies-slide{
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+  }
+
+  .top-ten-movies-section .top-ten-movies-slide span{
+    font-size: 6.5rem;
+    color: white;
+  }
+
+  .top-ten-movies-section h2{
+    font-size: 7.5rem;
+    text-shadow: -1px 0 #3498db, 0 1px #3498db, 1px 0 #3498db, 0 -1px #3498db;
+    color: white;
+  
+  }
+
+  .catalog-section{
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .catalog-section .catalog-item{
+    padding: 2rem 0;
+  }
+
+  .catalog-section .catalog-item h4{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    /* letter-spacing: 1px; */
+    font-weight: normal;
+    color: #b1b2b3; 
+  }
+
+  .catalog-section .genres-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    margin: 4rem 0;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .catalog-section .genres-section .genre-item {
+    font-size: 1.7rem;
+    padding: 1rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-right:2.5rem ;
+    letter-spacing: 1px;
+    cursor: pointer;
+    white-space: nowrap;
+    background: linear-gradient(4deg, #040b3e 64%, #130F22  100%);
+  }
+
+  .catalog-section .genres-section .genre-item:hover{
+    background: white;
+    color: black;
+  }
+
+  .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .movie-list .movie-item{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    width: 19%;
+    opacity: .8;
+  }
+  
+  .movie-item{
+    opacity: .8;
+  }
+
+  .movie-detail .slider-content{
+    bottom: 5rem;
+  }
+  .movie-detail .slider-content h1{
+    font-size: 7.5rem;
+    white-space: nowrap;
+  }
+  .movie-detail .content{
+    padding: 2rem 2rem 1rem;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+  }
+  .movie-detail  .actions{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+  .movie-detail .actions .action{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #b1b2b3;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .movie-detail .content .description{
+    color:#dadada;
+    width: 70%;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+.movie-item .actions{
+  background: #5d5858;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  border-radius: 10px;
+  padding: .5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 4);
+ }
+
+.movie-item .options{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.movie-item.options:hover {
+  transform: scale(1.3); 
+}
+
+.movie-item .options span{
+  color:white;
+  height: 5px;
+  font-size: 4rem;
+}
+
+ .movie-item .actions .item{
+  color: white;
+  font-size: 1.4rem;
+  margin: 1rem 0.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+ }
+
+ .movie-item .actions .close{
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 2rem;
+ }
+ .movie-item .actions .item button, .movie-item .actions .item a {
+  font-family: 'poppins';
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  margin-left: 1rem;
+ }
+
+ .movie-item .actions .icon{
+  display: flex;
+  justify-content: center;
+  width: 15px;
+ }
+ 
+
+ .movie-detail .additional .additional-titles{
+  display: flex;
+  gap: 6rem;
+  border-bottom: 1px solid;
+ }
+
+
+ .movie-detail .additional .additional-title h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.movie-detail .additional .information{
+  min-height: 310px;
+  margin: 2rem 0;
+}
+
+.movie-detail .additional .information .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color:rgba(255, 255, 255, 0.8)
+}
+
+.movie-detail .additional .information .item strong{
+  color:white
+}
+
+
+.movie-detail .additional .additional-title.active{
+  border-bottom: 3px solid white;
+}
+
+
+.trailer-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.trailer-popup {
+  /* background-color: black; */
+  border-radius: 8px;
+  width: 85%;
+  height: 95%;
+  overflow: hidden;
+  position: relative;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  float: right;
+  color:white;
+  font-size: 3rem;
+}
+
+.trailer-popup-content {
+  padding: 1rem;
+  overflow-y: hidden;
+  height: calc(100% - 3rem);
+}
+
+.trailer-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.trailer-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .slider-item{
+    height: 60vh !important;
+  }
+  .movie-top-slider{
+    height: 60vh !important;
+  }
+  .slider-content{
+    width: 35rem;
+  }
+  .slider-content h2 {
+    font-size: 3.5rem;
+  }
+  .slider-content p{
+    /* font-size: 1.2rem; */
+    /* width: 60%; */
+
+    display: none;
+  }
+  .top-ten-movies-swiper{
+    padding-left: 0;
+  }
+  .top-ten-movies-swiper .top-ten-movies-slide{
+    margin-right: 20px !important;
+  }
+
+  .movie-list .movie-item{
+    width: 47%;
+  }
+  
+  .movie-detail  .actions {
+    width: 100%;
+  }
+  .movie-detail  .actions .action{
+    font-size: 1.2rem;
+  }
+  
+  .movie-detail .content .description{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .movie-detail .additional .additional-titles{
+    gap: 3rem;
+  }
+
+  .trailer-popup{
+    height: 50%;
+  }
+}
